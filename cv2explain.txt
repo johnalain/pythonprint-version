@@ -1,0 +1,62 @@
+Skip to content
+Chat history
+
+
+
+You said:
+what is import cv2
+ChatGPT said:
+import cv2 is a Python statement used to import the OpenCV library into your program.
+
+What is cv2?
+OpenCV (Open Source Computer Vision Library) is a powerful library for:
+
+Image processing
+
+Video processing
+
+Computer vision
+
+Basic machine learning for vision tasks
+
+In Python, OpenCV is accessed using the module name cv2.
+
+What does import cv2 do?
+It makes all OpenCV functions available so you can use them in your code, for example:
+
+Read and write images
+
+Detect faces or objects
+
+Apply filters (blur, edge detection, etc.)
+
+Work with videos and webcams
+
+Simple example
+import cv2
+
+img = cv2.imread("image.jpg")   # Read an image
+cv2.imshow("My Image", img)     # Show the image
+cv2.waitKey(0)                  # Wait for a key press
+cv2.destroyAllWindows()         # Close the window
+Common uses of cv2
+Image resizing, cropping, rotating
+
+Edge detection (Canny)
+
+Face detection
+
+Video capture from a camera
+
+Drawing shapes and text on images
+
+If you get an error
+If you see:
+
+ModuleNotFoundError: No module named 'cv2'
+You need to install OpenCV:
+
+pip install opencv-python
+If you want, I can show beginner-friendly OpenCV examples or explain how it’s used in projects like face detection or image filters 🙂
+No file chosenNo file chosen
+ChatGPT can make mistakes. Check important info.
