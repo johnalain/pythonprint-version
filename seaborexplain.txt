@@ -1,0 +1,99 @@
+Skip to content
+Chat history
+
+
+
+You said:
+ sns.heatmap(data, annot=True)
+ChatGPT said:
+sns.heatmap(data, annot=True) is a Seaborn command used to draw a heatmap.
+
+What it means
+sns.heatmap(...)
+Creates a heatmap (a grid where values are shown using colors).
+
+data
+The dataset to plot.
+It is usually:
+
+a 2D list
+
+a NumPy 2D array
+
+or a Pandas DataFrame
+
+annot=True
+Writes the actual numeric values inside each cell of the heatmap.
+
+Simple example
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+
+data = np.array([[1, 2, 3],
+                 [4, 5, 6],
+                 [7, 8, 9]])
+
+sns.heatmap(data, annot=True)
+plt.show()
+🔹 Colors show magnitude
+🔹 Numbers appear inside cells because of annot=True
+
+Common useful options
+sns.heatmap(
+    data,
+    annot=True,
+    cmap="coolwarm",   # color scheme
+    fmt=".2f",         # number format
+    linewidths=0.5     # lines between cells
+)
+When heatmaps are used
+Correlation matrices
+
+Confusion matrices
+
+Visualizing 2D numerical data
+
+Comparing values across rows and columns
+
+If you want, I can:
+
+Explain correlation heatmaps
+
+Help fix an error
+
+Show how to use it with Pandas DataFrames
+
+
+
+
+No file chosenNo file chosen
+ChatGPT can make mistakes. Check important info.
+ChatGPT says: `sns.heatmap(data, annot=True)`
+ is a **Seaborn** command used to draw a **heatmap**.
+  ### What it means - **`sns.heatmap(...)`**
+   Creates a heatmap (a grid where values are shown 
+   using colors). - **`data`** The dataset to plot.
+    It is usually: - a 2D list - a NumPy 2D array - 
+    or a Pandas DataFrame - **`annot=True`** Writes the 
+    **actual numeric values** inside each cell of the 
+    heatmap. --- ### Simple example ```python import 
+    seaborn as sns import matplotlib.pyplot as plt 
+    import numpy as np 
+    data = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) 
+    sns.heatmap(data, annot=True) 
+    plt.show() ``` 🔹 
+    Colors show magnitude 
+    🔹 Numbers appear inside cells because of 
+    `annot=True` --- ###
+     Common useful options ```python 
+     sns.heatmap( data, annot=True, cmap="coolwarm",
+      # color scheme fmt=".2f", # number format 
+      linewidths=0.5 # lines between cells ) ```
+       --- ### When heatmaps are used - 
+       Correlation matrices - Confusion matrices - 
+       Visualizing 2D numerical data - Comparing values
+        across rows and columns If you want, I can: 
+        - Explain **correlation heatmaps** - Help fix 
+        an error - 
+===================================
